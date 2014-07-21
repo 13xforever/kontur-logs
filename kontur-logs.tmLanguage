@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>log</string>
+	</array>
+	<key>name</key>
+	<string>Kontur Log file</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>^.{24}(\d+)\W+FATAL\W+.+$</string>
+			<key>name</key>
+			<string>invalid.illegal.kontur-log</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^.{24}(\d+)\W+ERROR\W+.+$</string>
+			<key>name</key>
+			<string>string.other.error.kontur-log</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^\W*(at|в)\W+.+$</string>
+			<key>name</key>
+			<string>string.other.exception.kontur-log</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^.{24}(\d+)\W+WARN\W+.+$</string>
+			<key>name</key>
+			<string>support.constant.warn.kontur-log</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^.{24}(\d+)\W+DEBUG\W+.+$</string>
+			<key>name</key>
+			<string>comment.line.kontur-log</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.kontur-log</string>
+	<key>uuid</key>
+	<string>1774ac51-d5b9-4d03-a3d4-ae1d029f3d24</string>
+</dict>
+</plist>
