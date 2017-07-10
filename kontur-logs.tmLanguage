@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>fileTypes</key>
@@ -20,19 +20,19 @@
 			<key>match</key>
 			<string>^.{24}(\d+)\W+ERROR\W+.+$</string>
 			<key>name</key>
-			<string>string.other.error.kontur-log</string>
+			<string>markup.deleted.kontur-log</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>^\W*(at|в)\W+.+$</string>
 			<key>name</key>
-			<string>string.other.exception.kontur-log</string>
+			<string>markup.deleted.exception.kontur-log</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>^.{24}(\d+)\W+WARN\W+.+$</string>
 			<key>name</key>
-			<string>support.constant.warn.kontur-log</string>
+			<string>markup.changed.kontur-log</string>
 		</dict>
 		<dict>
 			<key>match</key>

@@ -6,23 +6,27 @@ fileTypes: [log]
 uuid: 1774ac51-d5b9-4d03-a3d4-ae1d029f3d24
 
 patterns:
-## DEBUG, INFO, WARN, ERROR, FATAL 
+## FATAL 
 - name: invalid.illegal.kontur-log
   match: ^.{24}(\d+)\W+FATAL\W+.+$
 
-- name: string.other.error.kontur-log
+## ERROR
+- name: markup.deleted.kontur-log
   match: ^.{24}(\d+)\W+ERROR\W+.+$
 #  begin: ^.{24}(\d+)\W+ERROR\W+.+$
 #  end: ^(?:\d{4}-\d\d-\d\d \d\d:\d\d:\d\d,\d{3})
-- name: string.other.exception.kontur-log
+- name: markup.deleted.exception.kontur-log
   match: ^\W*(at|в)\W+.+$
 
-- name: support.constant.warn.kontur-log
+## WARN
+- name: markup.changed.kontur-log
   match: ^.{24}(\d+)\W+WARN\W+.+$
 
+## INFO
 ##- name: comment.line.kontur-log
 ##  match: ^.{24}(\d+)\W+INFO\W+.+$
 
+## DEBUG
 - name: comment.line.kontur-log
   match: ^.{24}(\d+)\W+DEBUG\W+.+$
 ...
