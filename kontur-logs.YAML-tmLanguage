@@ -16,7 +16,11 @@ patterns:
 #  begin: ^.{24}(\d+)\W+ERROR\W+.+$
 #  end: ^(?:\d{4}-\d\d-\d\d \d\d:\d\d:\d\d,\d{3})
 - name: markup.deleted.exception.kontur-log
+  match: ^(\w|\.)*Exception:.+$
+- name: markup.deleted.exception.kontur-log
   match: ^\W*(at|в)\W+.+$
+- name: markup.deleted.exception.kontur-log
+  match: ^--- (\w|\W)+ ---$
 
 ## WARN
 - name: markup.changed.kontur-log

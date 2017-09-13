@@ -24,7 +24,19 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>^(\w|\.)*Exception:.+$</string>
+			<key>name</key>
+			<string>markup.deleted.exception.kontur-log</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>^\W*(at|в)\W+.+$</string>
+			<key>name</key>
+			<string>markup.deleted.exception.kontur-log</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^--- (\w|\W)+ ---$</string>
 			<key>name</key>
 			<string>markup.deleted.exception.kontur-log</string>
 		</dict>
