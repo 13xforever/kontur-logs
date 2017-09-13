@@ -1,0 +1,34 @@
+%YAML 1.2
+---
+name: Kontur Log file
+file_extensions: [log]
+scope: source.kontur-log
+
+contexts:
+  main:
+    - match: ^.{24}(\d+)\W+FATAL\W+.+$
+      scope: invalid.illegal.kontur-log
+
+## ERROR
+    - match: ^.{24}(\d+)\W+ERROR\W+.+$
+      scope: markup.deleted.kontur-log
+#  begin: ^.{24}(\d+)\W+ERROR\W+.+$
+#  end: ^(?:\d{4}-\d\d-\d\d \d\d:\d\d:\d\d,\d{3})
+    - match: ^(\w|\.)*Exception:.+$
+      scope: markup.deleted.exception.kontur-log
+    - match: ^\W*(at|в)\W+.+$
+      scope: markup.deleted.exception.kontur-log
+    - match: ^--- (\w|\W)+ ---$
+      scope: markup.deleted.exception.kontur-log
+
+## WARN
+    - match: ^.{24}(\d+)\W+WARN\W+.+$
+      scope: markup.changed.kontur-log
+
+## INFO
+    - match: ^.{24}(\d+)\W+INFO\W+.+$
+      scope: comment.line.kontur-log
+
+## DEBUG
+    - match: ^.{24}(\d+)\W+DEBUG\W+.+$
+      scope: comment.line.kontur-log
