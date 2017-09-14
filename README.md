@@ -8,11 +8,11 @@ This version is intended for use with [Grandson-of-Obsidian](../../../../jfroman
 Recommended supplemental plugin: [SublimeTail](../../../../vifo/SublimeTail/tree/devel).
 
 How to install:
-# Get [PackageControl](https://packagecontrol.io/installation)
-# Add this repo
-  # `ctrl`+`shift`+`p` (or Preferences → Package Control)
-  # Package Control: Add channel
-  # Paste this github repo url
+1. Get [PackageControl](https://packagecontrol.io/installation)
+2. Add this repo
+  1. `ctrl`+`shift`+`p` (or Preferences → Package Control)
+  2. Package Control: Add channel
+  3. Paste this github repo url
 
 Some screenshots:
 ![Monokai Extended](./screenshots/monokai_extended.png?raw=true)
