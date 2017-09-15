@@ -10,7 +10,7 @@ Recommended supplemental plugin: [SublimeTail](../../../../vifo/SublimeTail/tree
 How to install:
 1. Get [PackageControl](https://packagecontrol.io/installation)
 1. Add this repo
-   1. `ctrl`+`shift`+`p` (or Preferences → Package Control)
+   1. <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>p</kbd> (or Preferences → Package Control)
    1. Package Control: Add channel
    1. Paste this github repo url
 
