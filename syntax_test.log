@@ -1,0 +1,49 @@
+0000-00-00 00:00:00,000 0      DEBUG SYNTAX TEST "kontur-logs.sublime-syntax"
+
+2017-09-07 19:20:23,722 3037   DEBUG ClusterConfig parameters were found by the prefix 'topology/zookeeper':
+	 key: 
+	 values:
+		 192.168.0.1:69
+		 192.168.0.2:69
+		 192.168.0.3:69
+		 192.168.0.4:69
+		 192.168.0.5:69
+
+2017-09-07 19:20:23,727 3042   INFO  ClusterConfigTopologyResolver. Topology saved in cache. TopologyName: topology/zookeeper, CachedVersion: [local: 2017-08-29T13:30:35.1195140Z; dc.api.test: 2017-09-07T11:52:20.0000000Z], Cluster: Cluster:
+	Replicas:
+		http://192.168.0.1:69/
+		http://192.168.0.2:69/
+		http://192.168.0.3:69/
+		http://192.168.0.4:69/
+		http://192.168.0.5:69/
+	ExternalURL = 
+
+2017-09-07 19:20:25,726 5041   WARN  ClusterConfig parameters were found by the prefix 'topology/api.sessions':
+	 key: 
+	 values:
+		 vm-nice-api1.dev.domain:69
+		 vm-nice-api2.dev.domain:69
+		 vm-nice-api3.dev.domain:69
+	 key: externalurl
+	 values:
+		 https://nice-api.dev.domain/sessions
+2017-09-07 19:20:25,726 5041   ERROR  ClusterConfigTopologyResolver. Topology saved in cache. TopologyName: topology/api.sessions, CachedVersion: [local: 2017-08-29T13:30:35.1195140Z; dc.api.test: 2017-09-07T11:52:20.0000000Z], Cluster: Cluster:
+	Replicas:
+		http://vm-nice-api1.dev.domain:69/
+		http://vm-nice-api2.dev.domain:69/
+		http://vm-nice-api3.dev.domain:69/
+	ExternalURL = https://nice-api.dev.domain/sessions/
+
+2017-09-07 19:20:26,058 5373   FATAL ClusterConfig parameters were found by the prefix 'topology/cauldron':
+	 key: 
+	 values:
+		 vm-cauldron1:666
+		 vm-cauldron2:666
+
+2017-09-07 19:20:26,176 5491   DEBUG [mgaimkjkjzza91n33p5o] [T-dae2f359(-)] REQUEST:
+<binary>
+2017-09-07 19:20:26,312 5627   DEBUG [mgaimkjkjzza91n33p5o] [T-dae2f359(-)] AppCode = [<unknown>]
+2017-09-07 19:20:26,312 5627   INFO  [mgaimkjkjzza91n33p5o] [T-dae2f359(-)] AppCode = [<unknown>]
+2017-09-07 19:20:26,312 5627   WARN  [mgaimkjkjzza91n33p5o] [T-dae2f359(-)] AppCode = [<unknown>]
+2017-09-07 19:20:26,312 5627   ERROR [mgaimkjkjzza91n33p5o] [T-dae2f359(-)] AppCode = [<unknown>]
+2017-09-07 19:20:26,312 5627   FATAL [mgaimkjkjzza91n33p5o] [T-dae2f359(-)] AppCode = [<unknown>]
