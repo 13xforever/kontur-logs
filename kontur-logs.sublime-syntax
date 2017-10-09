@@ -5,7 +5,7 @@ file_extensions: [log, "01", "02", "03", "04", "05", "06", "07", "08", "09", "10
 scope: source.kontur-log
 
 variables:
-  date_time_prefix: (\d|[\-\:,]|\W)*\W+
+  date_time_prefix: (?:\d|[\-\:,]|\W)*\W+
 
 contexts:
   main:
