@@ -33,4 +33,9 @@ patterns:
 ## DEBUG
 - name: comment.line.kontur-log
   match: ^.{24}(\d+)\W+DEBUG\W+.+$
+
+## TRACE
+- name: comment.line.kontur-log
+  match: ^.{24}(\d+)\W+TRACE\W+.+$
+
 ...

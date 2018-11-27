@@ -24,6 +24,9 @@ contexts:
     - match: ^{{date_time_prefix}}DEBUG\W+
       scope: comment.line.kontur-log
       set: debug
+    - match: ^{{date_time_prefix}}TRACE\W+
+      scope: comment.line.kontur-log
+      set: trace
 
   fatal:
     - include: main
@@ -42,6 +45,10 @@ contexts:
     - match: .*$
       scope: text.kontur-log
   debug:
+    - include: main
+    - match: .*$
+      scope: comment.line.kontur-log
+  trace:
     - include: main
     - match: .*$
       scope: comment.line.kontur-log

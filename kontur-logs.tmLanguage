@@ -52,6 +52,12 @@
 			<key>name</key>
 			<string>comment.line.kontur-log</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>^.{24}(\d+)\W+TRACE\W+.+$</string>
+			<key>name</key>
+			<string>comment.line.kontur-log</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.kontur-log</string>
